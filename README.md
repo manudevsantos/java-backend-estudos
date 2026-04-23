@@ -1,4 +1,4 @@
-Forma-o-em-Java
+java-backend-estudos
 
 Este repositório reúne toda a minha trajetória de aprendizado em Java, desde os primeiros conceitos até o desenvolvimento de aplicações mais completas voltadas para o backend.
 
