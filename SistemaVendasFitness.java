@@ -1,7 +1,6 @@
-
 import java.util.Scanner; // Import necessário para o Scanner funcionar
 
-public class estudos {
+public class SistemaVendasFitness {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -23,16 +22,16 @@ public class estudos {
 
         // valor de cada produto
 
-        double anilha = 19;
-        double halter = 18;
-        double barra = 85;
-        double ketlebell = 22;
-        double colchonete = 60;
+        double anilha = 19.00;
+        double halter = 18.00;
+        double barra = 85.00;
+        double ketlebell = 22.00;
+        double colchonete = 60.00;
 
 
         // Cliente, carrinho e pagamento
 
-        double compraCliente= 0.00;
+        int compraCliente= 0;
         double carrinhoCliente = 0.00;
         double pagamento = 0.00;
         double troco = 0.00;
@@ -96,7 +95,7 @@ public class estudos {
 
                 carrinhoCliente += (compraCliente*halter);
                 halterQuantEstoque -= compraCliente;
-;
+
                 System.out.println("O valor total dos halteres é R$" + (compraCliente*halter));
                 System.out.println();
                 System.out.println("-------------------------------------------------------------");
@@ -104,7 +103,7 @@ public class estudos {
 
              } else {
                 System.out.println("-------------------------------------------------------------");
-                System.out.println("Desculpe, não temos essa quantidade no estoque. Temos apenas" + halterQuantEstoque + " halteres.");
+                System.out.println("Desculpe, não temos essa quantidade no estoque. Temos apenas " + halterQuantEstoque + " halteres.");
                 System.out.println("-------------------------------------------------------------");
                 System.out.println();
             }
@@ -125,7 +124,7 @@ public class estudos {
             } else {
 
                 System.out.println("-------------------------------------------------------------");
-                System.out.println("Desculpe, não temos essa quantidade de barras, temos " + barraQuantEstoque + "barras");
+                System.out.println("Desculpe, não temos essa quantidade de barras, temos apenas " + barraQuantEstoque + " barras");
                 System.out.println("-------------------------------------------------------------");
                 System.out.println();
             }
@@ -154,7 +153,7 @@ public class estudos {
                 System.out.println();
             }
             
-        System.out.println("Quantos kcolchonetes você deseja comprar? ");
+        System.out.println("Quantos colchonetes você deseja comprar? ");
         compraCliente= scan.nextInt();
         System.out.println();
 
@@ -178,7 +177,7 @@ public class estudos {
             }
 
 
-        System.err.println("     > O valor total do seu carrinho é de R$ " + carrinhoCliente + " <");
+        System.out.println("     > O valor total do seu carrinho é de R$ " + carrinhoCliente + " <");
         System.out.println();
         System.out.println("-------------------------------------------------------------");
         System.out.println();
@@ -208,9 +207,7 @@ public class estudos {
                 System.out.println();
                 System.out.println("-------------------------------------------------------------");
                 System.out.println();
-
-
-                
+  
             }
 
              scan.close();
